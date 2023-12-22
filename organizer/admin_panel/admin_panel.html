@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer | Admin Panel</title>
+</head>
+<body>
+    
+    <header>
+
+        <h1>Organizer: Admin Panel</h1>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="/organizer/admin_panel/admin_panel.html">Admin Panel</a></li>
+                <li><a href="/organizer/account_info/account_info.html">Account Info</a></li>
+                <li><a href="/organizer/event/events.html">Events</a></li>
+                <li><a href="/organizer/account/login_signup.html">Logout</a></li>
+
+            </ul>
+
+        </nav>
+
+        <a href="#newEvent">Create new event</a>
+
+    </header>
+
+    <main>
+
+        <section id="currentEvent">
+
+            <p>You are hosting: </p>
+
+            <div class="event-card big">
+
+                <h2>SVG Masters</h2>
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur aut est veniam, fugit praesentium odio laudantium sed illum esse necessitatibus! Qui veniam quo cumque mollitia vitae vel voluptatem autem non expedita? Corrupti repudiandae, qui sequi at quaerat, recusandae adipisci aliquid ducimus deleniti possimus, facere ullam modi distinctio ex. At, error eos. Neque, ipsam. Quis maiores nemo earum repellat veniam, ad voluptatibus accusantium consequatur nesciunt inventore odio! Repudiandae, ex recusandae.
+                </p>
+
+                <p>
+                    Date: DD/MM/YY
+                    Time: HH:MM
+                    Venue: ABC
+                    Registered Participants: 57
+                </p>
+
+                <a href="/organizer/event/event_details.html">Event Page</a>
+
+            </div>
+
+        </section>
+
+        <section id="allEvents">
+
+            <p>Other events: </p>
+
+            <div class="event-card">
+
+                <h3>Event X</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, inventore reiciendis. Reprehenderit culpa nobis modi inventore nesciunt quaerat iste ullam repellendus alias? Recusandae, mollitia fugiat.
+                </p>
+
+                <a href="/organizer/event/event_details.html">Event Page</a>
+
+            </div>
+
+            <div class="event-card">
+
+                <h3>Event X</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, inventore reiciendis. Reprehenderit culpa nobis modi inventore nesciunt quaerat iste ullam repellendus alias? Recusandae, mollitia fugiat.
+                </p>
+
+                <a href="/organizer/event/event_details.html">Event Page</a>
+
+            </div>
+
+            <div class="event-card">
+
+                <h3>Event X</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, inventore reiciendis. Reprehenderit culpa nobis modi inventore nesciunt quaerat iste ullam repellendus alias? Recusandae, mollitia fugiat.
+                </p>
+
+                <a href="/organizer/event/event_details.html">Event Page</a>
+
+            </div>
+
+        </section>
+
+        <section id="newEvent">
+
+            <h2>Create New Event</h2>
+
+            <form action="/organizer/event/event_details.html">
+
+                <div>
+                    <label for="eventName">Event Name:</label>
+                    <input type="text" id="eventName">
+                </div>
+
+                <div>
+                    <label for="eventDesc">Description:</label>
+                    <textarea name="" id="eventDesc" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <label for="eventVenue">Venue:</label>
+                    <input type="text" id="eventVenue">
+                </div>
+
+                <div>
+                    <label for="eventDate">Date:</label>
+                    <input type="date" name="" id="eventDate">
+                </div>
+                
+                <div>
+                    <label for="eventTime">Time:</label>
+                    <input type="time" name="" id="eventTime">
+                </div>
+
+                <select name="" id="eventType">
+                    <option value="audience">Audience</option>
+                    <option value="individual_part">Individual Participation</option>
+                    <option value="team_part">Team Participation</option>
+                </select>
+
+                <input type="submit" value="Submit">                
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
